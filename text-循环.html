@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text</title>
+</head>
+<body>
+<div>
+    <h2>循环练习</h2>
+    <hr>
+</div>
+<script>
+   // for 循环
+   //  for (var i=1;i<10;i++) {
+   //      console.log(i);
+   //  }
+
+    // break退出循环
+    // continue跳出当前项，继续往下循环
+
+    //for...in 循环只遍历可枚举属性， for in 一般用来遍历对象的key
+    var obj = {a:1, b:2, c:3};
+    for (let key in obj) {
+        console.log(key);
+    }
+
+    //for...of语句循环数组里面的每一项， for of 一般用来遍历数组的value
+    const array1 = ['4', '5', '6'];
+    for (const val of array1) {
+        console.log(val);
+    }
+
+    //with 语句用于设置代码在特定对象中的作用域
+   var sMessage = "hello";
+   with(sMessage) {
+       alert(toUpperCase());	//输出 "HELLO"
+   }
+   //在这个例子中，with 语句用于字符串，所以在调用 toUpperCase() 方法时，解释程序将检查该方法是否是本地函数。
+   // 如果不是，它将检查伪对象 sMessage，看它是否为该对象的方法。然后，alert 输出 "HELLO"，
+   // 因为解释程序找到了字符串 "hello" 的 toUpperCase() 方法。
+
+   //swith语句 开发者可以用 switch 语句为表达式提供一系列的情况（case）。
+   //假如sColor等于BLUE就 alert("Blue");假如sColor等于RED就 alert("Red")....
+   // 关键字 break 会使代码跳出 switch 语句。如果没有关键字 break，代码执行就会继续进入下一个 case。
+    //关键字 default 说明了表达式的结果不等于任何一种情况时的操作（事实上，它相对于 else 从句）。
+
+ <!--  var BLUE = "blue", RED = "red", GREEN  = "green";
+   switch (sColor) {
+       case BLUE: alert("Blue");
+           break;
+       case RED: alert("Red");
+           break;
+       case GREEN: alert("Green");
+           break;
+       default: alert("Other");
+   }
+
+假如e等于20就 alert("20");假如e等于30就 alert("30").....
+   switch (e) {
+       case 20: alert("20");
+           break;
+       case 30: alert("30");
+           break;
+       case 40: alert("40");
+           break;
+       default: alert("other");
+   } -->
+</script>
+</body>
+</html>
