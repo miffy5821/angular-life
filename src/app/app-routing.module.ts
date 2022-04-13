@@ -10,6 +10,7 @@ import { PetComponent } from './pc/home/components/pet/pet.component';
 import { RecreationComponent } from './pc/home/components/recreation/recreation.component';
 import { ShoppingComponent } from './pc/home/components/shopping/shopping.component';
 import { TravelComponent } from './pc/home/components/travel/travel.component';
+import { RegisterComponent } from './pc/common/register/register.component';
 
 const routes: Routes = [
   // {path：'', redirectTo: 'home', pathMath: 'full'},
@@ -22,7 +23,8 @@ const routes: Routes = [
 {path: 'recreation', component: RecreationComponent},
 {path: 'shopping', component: ShoppingComponent},
 {path: 'travel', component: TravelComponent},
-{path: 'home', component: HomeComponent}
+{path: 'register', component: RegisterComponent},
+{path: 'home', component: HomeComponent},
 ];
 
 @NgModule({

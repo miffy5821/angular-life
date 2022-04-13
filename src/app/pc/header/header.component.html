@@ -1,11 +1,20 @@
 <div class="header">
-  <a routerLink="/home">home</a>
-  <a routerLink="/recreation">娱乐</a>
-  <a routerLink="/shopping">购物</a>
-  <a routerLink="car">汽车</a>
-  <a routerLink="comic">动漫</a>
-  <a routerLink="movie">电影</a>
-  <a routerLink="food">美食</a>
-  <a routerLink="healthy">健康</a>
-  <a routerLink="travel">旅行</a>
+  <div class="header-mian">
+    <div class="logo"></div>
+    <div class="header_container">
+      <div class="header-top">
+        <div class="login-container">
+          <div (click)="common.loginModalVisible=true">登录</div>
+          <div routerLink="/register">注册</div>
+        </div>
+      </div>
+      <ul class="header-bottom">
+        <li *ngFor="let list of arrList" routerLinkActive="active">
+          <a [routerLink]="list.url" >{{list.menuNameCn}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
+<app-dailog *ngIf="common.dailogVisible"></app-dailog>
+<app-login *ngIf="common.loginModalVisible"></app-login>
