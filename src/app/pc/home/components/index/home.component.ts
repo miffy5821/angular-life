@@ -1,6 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import { NzCarouselModule } from 'ng-zorro-antd/carousel';
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

@@ -10,7 +10,9 @@ import { PetComponent } from './components/pet/pet.component';
 import { RecreationComponent } from './components/recreation/recreation.component';
 import { ShoppingComponent } from './components/shopping/shopping.component';
 import { TravelComponent } from './components/travel/travel.component';
-
+// @ts-ignore
+// import { NzCarouselModule } from 'ng-zorro-antd';
+import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { TravelComponent } from './components/travel/travel.component';
   ],
   imports: [
     HomeRoutingModule,
+    NzCarouselModule,
   ],
   entryComponents: []
 })
