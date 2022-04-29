@@ -1,3 +1,4 @@
+
 <div class="header">
   <div class="header-mian">
     <div class="logo"></div>
@@ -9,12 +10,15 @@
         </div>
       </div>
       <ul class="header-bottom">
-        <li *ngFor="let list of arrList" routerLinkActive="active">
+        <ng-container *ngFor="let list of arrList">
+        <li  routerLinkActive="active">
           <a [routerLink]=" list.url" >{{list.menuNameCn}}</a>
         </li>
+        </ng-container>
       </ul>
     </div>
   </div>
 </div>
+
 <app-dailog *ngIf="common.dailogVisible"></app-dailog>
 

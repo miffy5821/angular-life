@@ -6,6 +6,7 @@ import { DailogComponent } from './dailog/dailog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule,  ReactiveFormsModule} from '@angular/forms';
+import { RouterModule} from '@angular/router';
 @NgModule({
   declarations: [
     RegisterComponent,
@@ -17,6 +18,7 @@ import { FormsModule,  ReactiveFormsModule} from '@angular/forms';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    RouterModule
   ],
   exports: [
     DailogComponent,

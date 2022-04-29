@@ -9,12 +9,9 @@ import {PetComponent} from "./components/pet/pet.component";
 import {RecreationComponent} from "./components/recreation/recreation.component";
 import {ShoppingComponent} from "./components/shopping/shopping.component";
 import {TravelComponent} from "./components/travel/travel.component";
-import {RegisterComponent} from "../common/register/register.component";
 import {HomeComponent} from "./home.component";
 
-
 const routes: Routes = [
-
   {path: 'car', component: CarComponent},
   {path: 'comic', component: ComicComponent},
   {path: 'food', component: FoodComponent},
@@ -24,7 +21,6 @@ const routes: Routes = [
   {path: 'recreation', component: RecreationComponent},
   {path: 'shopping', component: ShoppingComponent},
   {path: 'travel', component: TravelComponent},
-  {path: 'register', component: RegisterComponent},
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
 ];
