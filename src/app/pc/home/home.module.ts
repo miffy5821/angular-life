@@ -11,6 +11,7 @@ import { RecreationComponent } from './components/recreation/recreation.componen
 import { ShoppingComponent } from './components/shopping/shopping.component';
 import { TravelComponent } from './components/travel/travel.component';
 import { RouterModule} from '@angular/router';
+import {NzCarouselModule} from "ng-zorro-antd/carousel";
 // @ts-ignore
 // import { NzCarouselModule } from 'ng-zorro-antd';
 // import { NzCarouselModule } from 'ng-zorro-antd/carousel';
@@ -31,7 +32,8 @@ import { RouterModule} from '@angular/router';
   imports: [
     HomeRoutingModule,
     // NzCarouselModule,
-    RouterModule
+    RouterModule,
+    NzCarouselModule
   ],
   entryComponents: []
 })

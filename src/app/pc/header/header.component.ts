@@ -8,15 +8,15 @@ import { Router } from "@angular/router";
 })
 export class HeaderComponent implements OnInit{
   public arrList = [
-    {menuNameCn: 'home', url : '/home'},
-    {menuNameCn: '娱乐', url : '/recreation'},
-    {menuNameCn: '购物', url : '/shopping'},
-    {menuNameCn: '汽车', url : '/car'},
-    {menuNameCn: '动漫', url : '/comic'},
-    {menuNameCn: '电影', url : '/movie'},
-    {menuNameCn: '美食', url : '/food'},
-    {menuNameCn: '健康', url : '/healthy'},
-    {menuNameCn: '旅行', url : '/travel'},
+    {menuNameCn: 'home', url : '/home/home'},
+    {menuNameCn: '娱乐', url : '/home/recreation'},
+    {menuNameCn: '购物', url : '/home/shopping'},
+    {menuNameCn: '汽车', url : '/home/car'},
+    {menuNameCn: '动漫', url : '/home/comic'},
+    {menuNameCn: '电影', url : '/home/movie'},
+    {menuNameCn: '美食', url : '/home/food'},
+    {menuNameCn: '健康', url : '/home/healthy'},
+    {menuNameCn: '旅行', url : '/home/travel'},
   ];
   constructor(
     public common: CommonService,

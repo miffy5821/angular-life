@@ -9,7 +9,7 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
     children: [
-      {path: '**', redirectTo: 'home', pathMatch: 'full'},
+      // {path: '**', redirectTo: 'home', pathMatch: 'full'},
       {path: 'home', loadChildren: () => import('./pc/home/home.module').then(m => m.HomeModule)},
       {path: 'register', component: RegisterComponent},
     ]
