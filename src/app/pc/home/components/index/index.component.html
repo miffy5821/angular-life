@@ -1,0 +1,21 @@
+<div class="home">
+  <div class="banner">
+    <nz-carousel style="overflow: hidden" nzAutoPlay [nzEffect]="'fade'" [nzEnableSwipe]="true" [nzEnableSwipe]="false" [nzAutoPlay]='true' [nzAutoPlaySpeed]="2000">
+      <div class="home-banner" *ngFor="let list of bannerList,index as i"  [style]="{backgroundImage: 'url(' + list.img + ')'}" >
+<!--        <img class="banner-img" [src]="list.img " alt="">-->
+      </div>
+    </nz-carousel>
+  </div>
+  <div class="notice">
+    <div class="notice_">
+      <i class="notice_icon" nz-icon nzType="sound" nzTheme="outline"></i>
+      <span>最新消息：</span>
+      <div class="notice_content">
+        <marquee behavior="scroll" onMouseOut="this.start()" onMouseOver="this.stop()">
+          {{noticeStr}}</marquee>
+      </div>
+    </div>
+  </div>
+  <div class="home-content">
+  </div>
+</div>

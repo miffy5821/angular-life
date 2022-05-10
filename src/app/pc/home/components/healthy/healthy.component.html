@@ -1,1 +1,12 @@
-<div>健康</div>
+<div class="home">
+  <div class="banner">
+    <nz-carousel nzAutoPlay>
+      <div nz-carousel-content *ngFor="let index of array">
+        <h3>{{ index }}</h3>
+      </div>
+    </nz-carousel>
+  </div>
+  <div class="notice"></div>
+  <div class="home-content">
+  </div>
+</div>

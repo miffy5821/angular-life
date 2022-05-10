@@ -5,7 +5,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./home.component.less']
 })
 export class HomeComponent implements OnInit{
-  array = [1, 2, 3, 4];
+
   constructor() {}
   ngOnInit() {}
 }

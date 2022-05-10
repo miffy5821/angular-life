@@ -8,7 +8,7 @@ import { Router } from "@angular/router";
 })
 export class HeaderComponent implements OnInit{
   public arrList = [
-    {menuNameCn: 'home', url : '/home/home'},
+    {menuNameCn: 'home', url : '/home/index'},
     {menuNameCn: '娱乐', url : '/home/recreation'},
     {menuNameCn: '购物', url : '/home/shopping'},
     {menuNameCn: '汽车', url : '/home/car'},
